@@ -1,7 +1,3 @@
-import { gsap } from './vendor/gsap/index.js';
-import { ScrollTrigger } from './vendor/gsap/ScrollTrigger.js';
-import { Flip } from './vendor/gsap/Flip.js';
-
 gsap.registerPlugin(ScrollTrigger, Flip);
 
 const pages = new Map([...document.querySelectorAll('[data-page]')].map((page) => [page.dataset.page, page]));
